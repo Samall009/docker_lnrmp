@@ -1,0 +1,8 @@
+location / {
+	# 项目根目录
+	root	/usr/share/nginx/html/$projectPath;
+	# 项目默认文档
+	index	index1.html index.htm;
+	# 项目伪静态
+	try_files $uri /index.php$is_args$query_string;
+}
