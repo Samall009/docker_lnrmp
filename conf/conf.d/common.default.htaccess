@@ -1,4 +1,4 @@
 location / {
 	root	/usr/share/nginx/html/$projectPath;
-	index	index1.html index.htm;
+	index	index.html index.htm;
 }
