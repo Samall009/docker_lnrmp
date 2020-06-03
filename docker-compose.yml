@@ -16,6 +16,9 @@ services:
         image: mysql:5.7.29
         volumes:
             - .\mysql:/var/lib/mysql
+            - .\conf\mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+            - .\conf\mysql.cnf:/etc/mysql/conf.d/mysql.cnf
+            - .\conf\docker.cnf:/etc/mysql/conf.d/docker.cnf
         ports:
             - "3306:3306"
         environment:
